@@ -8,7 +8,12 @@ describe ("weekdays", function() {
   // });
 
   it('should return the day of the week', function(){
-    const input = dayName(2019, 9, 12);
-    expect(input).toEqual("Saturday");
+    const input = dayName(2019, 2, 13);
+    expect(input).toEqual("Wednesday");
+  });
+
+  it('should return "enter a number" error', function(){
+    const input = (parseInt("asfaf"));
+    expect(input).toEqual(NaN);
   });
 });

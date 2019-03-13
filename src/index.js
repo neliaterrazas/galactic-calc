@@ -14,7 +14,13 @@ $(document).ready(function(){
     let day = $('#day').val();
     let year = $('#year').val();
 
-    if (month > 11 || month < 0 || day > 31 || day < 1) {
+
+
+    if (isNaN(year) || isNaN(month) || isNaN(day)) {
+      $(".result").text("Please enter number values only");
+
+    }
+    else if (month > 11 || month < 0 || day > 31 || day < 1) {
       $(".result").text("Enter a valid date");
     }
     else if (leapYear(year) === true && month === 1 && (day < 0 || day > 29)) {
