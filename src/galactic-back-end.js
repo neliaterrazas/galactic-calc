@@ -1,4 +1,4 @@
-export function todaysDate () {
+export function todaysDate() {
   const date = new Date();
   return date;
 }

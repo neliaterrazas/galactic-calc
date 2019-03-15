@@ -5,6 +5,13 @@ import { venus } from "../src/galactic-back-end.js";
 import { mars } from "../src/galactic-back-end.js";
 import { jupiter } from "../src/galactic-back-end.js";
 
+describe("what day is it?", function() {
+  it('should tell me todays month, date, and year', function() {
+    const date = Date();
+    expect(todaysDate(date)).toEqual("Mar 15 2019");
+  });
+});
+
 describe ("how many seconds have you lived?", function() {
   it('should return my age(years) in seconds', function(){
     const nelia = 25;
