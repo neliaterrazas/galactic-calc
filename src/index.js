@@ -11,14 +11,15 @@ $(document).ready(function(){
   $('form#date').submit(function(event){
     event.preventDefault();
 
-    let yourMonth = parseInt($('#month').val() - 1);
-    let yourDay = parseInt($('#day').val());
-    let yourYear = parseInt($('#year').val());
+    let yourMonth = ($('input#month').val() - 1);
+    let yourDay = $('input#day').val();
+    let yourYear = $('input#year').val();
 
-
-    // console.log(yourYear);
-
-    $('.result').text(getAge());
+    if (isNaN(yourMonth) || isNaN(yourDay) || isNaN(yourYear)) {
+      $(".result").text("Please enter number values only");
+    } else {
+      $('.result').text(getAge(yourMonth, yourDay, yourYear));
+    }
 
 
 

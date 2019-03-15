@@ -9,12 +9,9 @@ export function getAge(dateString) {
     let birthDate = new Date(dateString);
     let age = today.getFullYear() - birthDate.getFullYear();
     let m = today.getMonth() - birthDate.getMonth();
+      return age;
+    }
 
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
-        age--;
-
-    return age;
-}
 
 
 export function seconds(age) {
