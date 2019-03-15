@@ -1,11 +1,10 @@
 import { todaysDate } from "../src/galactic-back-end.js";
-import { calculateAge } from "../src/galactic-back-end.js";
+import { earth } from "../src/galactic-back-end.js";
 
 
-describe ("what day is it?", function() {
-  it('should tell me todays date', function(){
-    const date = new todaysDate();
-    expect(todaysDate.toString()).toEqual("date");
-
+describe ("how many seconds have you lived?", function() {
+  it('should return my age(years) in seconds', function(){
+    const nelia = 25;
+    expect(earth(nelia)).toEqual(788940000);
   });
 });
