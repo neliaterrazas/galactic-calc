@@ -2,11 +2,11 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
 import './sass/styles.scss';
-import { dayName } from '../src/weekday-calc.js';
-import { leapYear } from '../src/weekday-calc.js';
+// import { dayName } from '../src/weekday-calc.js';
+// import { leapYear } from '../src/weekday-calc.js';
 
 // import { translate, translate2 } from './translator.js';
-// 
+//
 // $(document).ready(function(){
 //   $("form#date").submit(function(event){
 //     event.preventDefault();

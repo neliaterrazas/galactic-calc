@@ -5,20 +5,21 @@ export function todaysDate () {
 
 
 
-export function earth(age) {
+export function seconds(age) {
   const ageInSeconds = age * 31557600;
   return ageInSeconds;
 }
 
-export function mercury(){
+export function mercury(age){
+
 
 }
-export function venus() {
+export function venus(age) {
 
 }
-export function mars() {
+export function mars(age) {
 
 }
-export function jupiter() {
+export function jupiter(age) {
 
 }
