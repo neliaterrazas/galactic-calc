@@ -8,7 +8,7 @@ import { jupiter } from "../src/galactic-back-end.js";
 describe("what day is it?", function() {
   it('should tell me todays month, date, and year', function() {
     const date = Date();
-    expect(todaysDate(date)).toEqual("Mar 15 2019");
+    expect(todaysDate(date)).toEqual("date");
   });
 });
 
