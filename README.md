@@ -9,7 +9,7 @@
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ### Specs
-Take a person's and 
+Take a person's and
 |   |   |   |   |   |
 |:-:|:-:|:-:|:-:|:-:|
 |    |   |   |   |   |
@@ -42,7 +42,7 @@ Webpages will readjust nav bar display, image size, and main container layout as
 
 ### Setup Instructions
 
-* Download this repository at https://github.com/neliaterrazas/freelance-project.git
+* Download this repository at https://github.com/neliaterrazas/galactic-calc.git
 * $ npm install in the terminal to retrieve node_modules folder
 * $ npm run build in the terminal to retrieve dist folder
 * Open in your favorite text editor to see said folders
