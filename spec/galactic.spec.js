@@ -22,13 +22,13 @@ describe ("what year is it?", function() {
   });
 });
 
-describe ("what is your age?", function() {
-  it('should return your age', function(){
-    const birthday = "Jan 17 1994";
-
-    expect(getAge(birthday)).toEqual(25);
-  });
-});
+// describe ("what is your current age on Mercury?", function() {
+//   it('should return 6', function(){
+//     const birthday = "Jan 17 1994";
+//
+//     expect(mercury(getAge(birthday))).toEqual(6);
+//   });
+// });
 
 describe ("what is my age on other planets?", function() {
   it('should return my age(years) on Mercury', function(){

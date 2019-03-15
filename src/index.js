@@ -8,18 +8,11 @@ import { mars } from "../src/galactic-back-end.js";
 import { jupiter } from "../src/galactic-back-end.js";
 
 $(document).ready(function(){
-  $('form#date').submit(function(event){
+  $('#calendar').submit(function(event){
     event.preventDefault();
+    let dob = $("#born").val();
 
-    let yourMonth = ($('input#month').val() - 1);
-    let yourDay = $('input#day').val();
-    let yourYear = $('input#year').val();
-
-    if (isNaN(yourMonth) || isNaN(yourDay) || isNaN(yourYear)) {
-      $(".result").text("Please enter number values only");
-    } else {
-      $('.result').text(getAge(yourMonth, yourDay, yourYear));
-    }
+    $('.result').append(dob);
 
 
 

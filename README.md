@@ -6,39 +6,39 @@
 
 ### Description
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+An application to check your age on different planets! Then, given an age, the site will tell you how many years you have left on said planet determined by average life expectancy.
 
 ### Specs
-Take a person's and
-|   |   |   |   |   |
+Take a person's current age translate into ages on other planets. The conversions are as follows:
+
+#### Planets
+|   | Conversions  | Expected Age for NT (25)  |
 |:-:|:-:|:-:|:-:|:-:|
-|    |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|  Mercury  | 0.24/1 Earth Year | 6  |   
+| Venus |  0.62/1 Earth Year | 15.5  |   
+| Mars  | 1.88/1 Earth Year  | 47  |  
+| Jupiter  | 11.86/1 Earth Year  | 296.5  |
+#### Life Expentancy
+|   | Life Expectancy  |
+|:-:|:-:|:-:|:-:|:-:|
+|  Male  | 77 |  
+| Female |  81 |  
 
-### Images:
-
-<!-- ![mobile user interface](src/assets/images/mobile-wireframe.png)
-![tablet user interface](src/assets/images/tablet-wireframe.png)
-![desktop user interface](src/assets/images/desktop-wireframe.png) -->
 
 
-
-### Research, Inspiration, and Brainstorm
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<!-- ### Images: -->
 
 
 ### Technologies and Resources
 
-* Sketch
 * HTML
-* CSS
-* Sass
+* Karma
+* Jasmine
+* Javascript
 
 ### Responsiveness
 
-Webpages will readjust nav bar display, image size, and main container layout as the viewport changes sizes. There are 3 main viewports in mind: mobile, tablet and desktop.
+This site is still not functional. You are able to see what progress I have made in my galactic-back-end.js , index.js , and galactic.spec.js files.
 
 ### Setup Instructions
 
@@ -47,10 +47,11 @@ Webpages will readjust nav bar display, image size, and main container layout as
 * $ npm run build in the terminal to retrieve dist folder
 * Open in your favorite text editor to see said folders
 * $ npm run start to open a new tab with the live site/ compile code.
+* $ npm run test to open Karma and see the tests live.
 
 
 ### Roadmap
-I will have to refactor back end to ES6 and redefine classes.
+I will have to refactor back end to ES6 and redefine classes, connect the dots on why my getAge() function is only working in Karma and not the actual site, and add life expectancy functions.
 
 ### License
 
