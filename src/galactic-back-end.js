@@ -1,15 +1,27 @@
-export function todaysDate() {
+export function thisYear() {
   const date = new Date();
   const year = date.getFullYear();
   return year;
 }
 
+export function getAge(dateString) {
+    let today = new Date();
+    let birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+        age--;
+
+    return age;
+}
 
 
 export function seconds(age) {
   const ageInSeconds = age * 31557600;
   return ageInSeconds;
 }
+
 
 export function mercury(age){
   const mercuryAge = age * 0.24;

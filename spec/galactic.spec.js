@@ -1,21 +1,32 @@
-import { todaysDate } from "../src/galactic-back-end.js";
+import { thisYear } from "../src/galactic-back-end.js";
 import { seconds } from "../src/galactic-back-end.js";
+import { getAge } from "../src/galactic-back-end.js";
 import { mercury } from "../src/galactic-back-end.js";
 import { venus } from "../src/galactic-back-end.js";
 import { mars } from "../src/galactic-back-end.js";
 import { jupiter } from "../src/galactic-back-end.js";
 
-// describe("what day is it?", function() {
-  // it('should tell me todays month, date, and year', function() {
-  //
-  //   expect(todaysDate(date)).toEqual("Mar 15 2019");
-  // });
-// });
+
 
 describe ("how many seconds have you lived?", function() {
   it('should return my age(years) in seconds', function(){
     const nelia = 25;
     expect(seconds(nelia)).toEqual(788940000);
+  });
+});
+
+describe ("what year is it?", function() {
+  it('should return 2019', function(){
+    const example = new Date;
+    expect(thisYear(example)).toEqual(2019);
+  });
+});
+
+describe ("what is your age?", function() {
+  it('should return your age', function(){
+    const birthday = "Jan 17 1994";
+
+    expect(getAge(birthday)).toEqual(25);
   });
 });
 

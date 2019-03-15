@@ -50,7 +50,7 @@ Webpages will readjust nav bar display, image size, and main container layout as
 
 
 ### Roadmap
-I would like to continue building out the amenities and how to join pages for all versions, as all of my 4 remaining hours was spent on styling and building out the index page as planned out on my wireframe. The amenities page is where I plan to use grid to my full advantage, especially with media queries, to integrate all the icons I made on Sketch.
+I will have to refactor back end to ES6 and redefine classes.
 
 ### License
 
