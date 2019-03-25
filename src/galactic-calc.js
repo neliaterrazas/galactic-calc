@@ -1,7 +1,7 @@
 export class GalacticCalc {
-  constructor(){
-    this.age = age;
-  }
+  // constructor(age){
+  //   this.age = age;
+  // }
   getAge(dateString){
     var today = new Date();
     var birthDate = new Date(dateString);
@@ -12,27 +12,25 @@ export class GalacticCalc {
     }
     return age;
   }
-  lifeExpectancy(dateString) {
-    const average = 80;
-    let current = getAge(dateString);
-    const leftToLive = average - current;
-    return ("You are expected to live for " + leftToLive + " more years!");
+  lifeExpectancy(lifeExpect, age) {
+    const leftToLive = (lifeExpect-age) / age;
+    return leftToLive;
   }
-  mercuryYears(){
+  mercuryYears(age){
     let mercuryAge = age * 0.24;
     return mercuryAge;
   }
-  venusYears(){
-    let venusAge = age * 0.24;
-    return mercuryAge;
+  venusYears(age){
+    let venusAge = age * 0.62;
+    return venusAge;
   }
-  marsYears(){
-    let marsAge = age * 0.24;
-    return mercuryAge;
+  marsYears(age){
+    let marsAge = age * 1.88;
+    return marsAge;
 
   }
-  jupiterYears(){
-    let jupiterAge = age * 0.24;
-    return mercuryAge;
+  jupiterYears(age){
+    let jupiterAge = age * 11.86;
+    return jupiterAge;
   }
 }

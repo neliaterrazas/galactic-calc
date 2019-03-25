@@ -1,12 +1,7 @@
-// import { thisYear } from "../src/galactic-back-end.js";
-// import { seconds } from "../src/galactic-back-end.js";
-// import { getAge } from "../src/galactic-back-end.js";
-// import { mercury } from "../src/galactic-back-end.js";
-// import { venus } from "../src/galactic-back-end.js";
-// import { mars } from "../src/galactic-back-end.js";
-// import { jupiter } from "../src/galactic-back-end.js";
-//
-//
+import { GalacticCalc } from "../src/galactic-calc.js";
+
+
+
 
 //
 // describe ("how many seconds have you lived?", function() {
@@ -15,22 +10,47 @@
 //     expect(seconds(nelia)).toEqual(788940000);
 //   });
 // });
+
+let x = new GalacticCalc(3);
+describe ("lifeExpectancy ratio", function() {
+  it('should return ratio of years left to live', function(){
+    let test = x.lifeExpectancy(80, 20);
+    expect(test).toEqual(3);
+  });
+});
+describe ("mercuryYears", function() {
+  it('should return age of user on Mercury', function(){
+    let test = x.mercuryYears(100);
+    expect(test).toEqual(24);
+  });
+});
+describe ("venusYears", function() {
+  it('should return age of user on Venus', function(){
+    let test = x.venusYears(100);
+    expect(test).toEqual(62);
+  });
+});
+describe ("marsYears", function() {
+  it('should return age of user on Mars', function(){
+    let test = x.marsYears(100);
+    expect(test).toEqual(188);
+  });
+});
+describe ("jupiterYears", function() {
+  it('should return age of user on Jupiter', function(){
+    let test = x.jupiterYears(100);
+    expect(test).toEqual(1186);
+  });
+});
+
+// describe ("what is your current age on Mercury?", function() {
+//   it('should return 6', function(){
+//     const birthday = "Jan 17 1994";
 //
-// describe ("what year is it?", function() {
-//   it('should return 2019', function(){
-//     const example = new Date;
-//     expect(thisYear(example)).toEqual(2019);
+//     expect(mercury(getAge(birthday))).toEqual(6);
 //   });
 // });
-//
-// // describe ("what is your current age on Mercury?", function() {
-// //   it('should return 6', function(){
-// //     const birthday = "Jan 17 1994";
-// //
-// //     expect(mercury(getAge(birthday))).toEqual(6);
-// //   });
-// // });
-//
+
 // describe ("what is my age on other planets?", function() {
 //   it('should return my age(years) on Mercury', function(){
 //     const nelia = 25;

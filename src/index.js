@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { galacticCalc } from "../src/galactic-back-end.js";
+import { GalacticCalc } from "../src/galactic-calc.js";
 
 
 $(document).ready(function(){
